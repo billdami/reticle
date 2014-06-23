@@ -1,5 +1,3 @@
-Drag and resize a ruler overlay to quickly measure the pixel dimensions of anything on a webpage.
-
 Report issues and submit suggestions on github (pull requests are also welcome!):
 
 https://github.com/billdami/reticle
