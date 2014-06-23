@@ -1,0 +1,199 @@
+#reticle-mask {
+  position: fixed;
+  z-index: 999998;
+  cursor: crosshair;
+  background: transparent;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#reticle-overlay {
+  display: none;
+  position: fixed;
+  z-index: 999999;
+  cursor: -webkit-grab;
+  cursor: grab;
+  width: 0;
+  height: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+.dragging-overlay #reticle-overlay,
+#reticle-mask.dragging-overlay {
+  cursor: -webkit-grabbing;
+  cursor: grabbing;
+}
+
+.dragging-mask #reticle-overlay {
+  cursor: crosshair;
+}
+
+.dragging-handle-tl,
+.dragging-handle-br,
+.dragging-handle-tl #reticle-overlay,
+.dragging-handle-br #reticle-overlay {
+  cursor: nwse-resize;
+}
+
+.dragging-handle-t,
+.dragging-handle-b,
+.dragging-handle-t #reticle-overlay,
+.dragging-handle-b #reticle-overlay {
+  cursor: ns-resize;
+}
+
+.dragging-handle-tr
+.dragging-handle-bl,
+.dragging-handle-tr #reticle-overlay,
+.dragging-handle-bl #reticle-overlay {
+  cursor: nesw-resize;
+}
+
+.dragging-handle-r
+.dragging-handle-l,
+.dragging-handle-r #reticle-overlay,
+.dragging-handle-l #reticle-overlay {
+  cursor: ew-resize;
+}
+
+#reticle-handles {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  bottom: -8px;
+  left: -8px;
+  background: transparent;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+.reticle-handle {
+  visibility: hidden;
+  position: absolute;
+  height: 12px;
+  width: 12px;
+  border-radius: 12px;
+  background: rgb(53, 87, 221);
+  border: 2px solid #fff;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.4);
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#reticle-handles.hover .reticle-handle,
+#reticle-handles:hover .reticle-handle {
+  visibility: visible;
+}
+
+.dragging-overlay #reticle-handles:hover .reticle-handle,
+.dragging-mask #reticle-handles:hover .reticle-handle,
+.dragging-handle #reticle-handles:hover .reticle-handle {
+  visibility: hidden;
+}
+
+#reticle-handle-tl {
+  top: 0;
+  left: 0;
+  cursor: nwse-resize;
+}
+
+#reticle-handle-t {
+  top: 0;
+  left: 50%;
+  margin-left: -6px;
+  cursor: ns-resize;
+}
+
+#reticle-handle-tr {
+  top: 0;
+  right: 0;
+  cursor: nesw-resize;
+}
+
+#reticle-handle-r {
+  top: 50%;
+  right: 0;
+  margin-top: -6px;
+  cursor: ew-resize;
+}
+
+#reticle-handle-br {
+  bottom: 0;
+  right: 0;
+  cursor: nwse-resize;
+}
+
+#reticle-handle-b {
+  bottom: 0;
+  left: 50%;
+  margin-left: -6px;
+  cursor: ns-resize;
+}
+
+#reticle-handle-bl {
+  bottom: 0;
+  left: 0;
+  cursor: nesw-resize;
+}
+
+#reticle-handle-l {
+  top: 50%;
+  left: 0;
+  margin-top: -6px;
+  cursor: ew-resize;
+}
+
+#reticle-info {
+  position: absolute;
+  bottom: -38px;
+  left: 50%;
+  height: 26px;
+  padding: 5px;
+  font-weight: bold;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  line-height: 16px;
+  color: #fff;
+  background: #222;
+  border-radius: 3px;
+  white-space: nowrap;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#reticle-info:after {
+  content: " ";
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  margin-left: -5px;
+  width: 0;
+  height: 0;
+  border: 5px solid transparent;
+  border-bottom-color: #222;
+}
+
+#reticle-info.align-top {
+  top: -38px;
+  bottom: auto;
+}
+
+#reticle-info.align-top:after {
+  border-bottom-color: transparent;
+  border-top-color: #222;
+  top: auto;
+  bottom: -10px;
+}

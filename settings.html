@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Reticle Settings</title>
+        <link rel="stylesheet" href="css/settings.css">
+    </head>
+    <body>
+        <div class="sidebar">
+            <h1 class="sidebar-heading">Reticle</h1>
+            <ul class="sidebar-tabs" id="tabs">
+                <li id="tab-settings" class="active">Settings</li>
+                <li id="tab-help">Shortcuts</li>
+            </ul>
+        </div>
+        <div class="content" id="tab-content-ct">
+            <div class="tab-content active" id="tab-content-settings">
+                <h2 class="content-heading">Settings</h2>
+                <section>
+                    <h3>Primary overlay color</h3>
+                    <label for="primary-hex" class="settings-row">The hexidecimal value (e.g. #000000) used as the overlay ruler's background color.</label>
+                    <input type="text" id="primary-hex" maxlength="7" />
+                </section>
+                <section>
+                    <h3>Alternate overlay color</h3>
+                    <label for="alt-hex" class="settings-row">The overlay ruler's alternate background color (press Tab when the overlay is visible to toggle between colors).</label>
+                    <input type="text" id="alt-hex" maxlength="7" />
+                </section>
+                <section>
+                    <h3>Overlay opacity</h3>
+                    <label for="overlay-opacity" class="settings-row">The overlay's level of transparency/opaqueness (higher values result in less transparency).</label>
+                    <select id="overlay-opacity">
+                        <option value="0.1">10%</option>
+                        <option value="0.2">20%</option>
+                        <option value="0.3">30%</option>
+                        <option value="0.4">40%</option>
+                        <option value="0.5">50%</option>
+                        <option value="0.6">60%</option>
+                        <option value="0.7">70%</option>
+                        <option value="0.8">80%</option>
+                        <option value="0.9">90%</option>
+                        <option value="1.0">100%</option>
+                    </select>
+                </section>
+            </div>
+            <div class="tab-content" id="tab-content-help">
+                <h2 class="content-heading">Shortcuts</h2>
+                <dl class="kb-shorcuts">
+                    <dt><span class="kb">Ctrl/Cmd</span>+<span class="kb">Shift</span>+<span class="kb">X</span></dt>
+                    <dd>Toggle extension (This can be customized in Extensions > Keyboard shortcuts)</dd>
+                    <dt><span class="kb">Esc</span></dt>
+                    <dd>Deactivate extension</dd>
+                    <dt><span class="kb">&uarr;</span> / <span class="kb">&darr;</span> / <span class="kb">&larr;</span> / <span class="kb">&rarr;</span></dt>
+                    <dd>Move overlay</dd>
+                    <dt><span class="kb">Shift</span>+<span class="kb">&uarr;</span> / <span class="kb">&darr;</span> / <span class="kb">&larr;</span> / <span class="kb">&rarr;</span></dt>
+                    <dd>Move overlay by 10px</dd>
+                    <dt><span class="kb">Alt</span>+<span class="kb">&uarr;</span> / <span class="kb">&darr;</span> / <span class="kb">&larr;</span> / <span class="kb">&rarr;</span></dt>
+                    <dd>Resize overlay</dd>
+                    <dt><span class="kb">Shift</span>+<span class="kb">Alt</span>+<span class="kb">&uarr;</span> / <span class="kb">&darr;</span> / <span class="kb">&larr;</span> / <span class="kb">&rarr;</span></dt>
+                    <dd>Resize overlay by 10px</dd>
+                    <dt><span class="kb">Ctrl/Cmd</span>+<span class="kb">&uarr;</span> / <span class="kb">&darr;</span></dt>
+                    <dd>Increase / decrease overlay opacity</dd>
+                    <dt><span class="kb">Tab</span></dt>
+                    <dd>Toggle between primary and alternate overlay color</dd>
+                    <dt><span class="kb">Delete</span> / <span class="kb">Backspace</span></dt>
+                    <dd>Clear the current overlay</dd>
+                </dl>
+            </div>
+        </div>
+        <script src="js/settings.js"></script>
+    </body>
+</html>

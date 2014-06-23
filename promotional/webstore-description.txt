@@ -1,0 +1,32 @@
+Drag and resize a ruler overlay to quickly measure the pixel dimensions of anything on a webpage.
+
+Report issues and submit suggestions on github (pull requests are also welcome!):
+
+https://github.com/billdami/reticle
+
+FEATURES
+----------------------------------------
+ * Inspired by the excellent Mac app, Crosshairs (http://giantcomet.com/crosshairs)
+ * Super quick and easy to use, just click and drag anywhere on the page to draw an overlay, then move and resize it to your heart's content.
+ * Lightweight and minimalistic UI
+ * Use keyboard shortcuts to interact with the extension (see below for full list) 
+ * Toggle between a primary and alternate overlay color
+ * Customize the overlay colors and opacity/transparency
+
+AVAILABLE SETTINGS (Right-click extension button > Options)
+----------------------------------------
+ * Primary overlay color (hex color value)
+ * Alternate overlay color
+ * Overlay opacity/transparency level
+
+KEYBOARD SHORTCUTS
+----------------------------------------
+ * Ctrl/Cmd+Shift+X - Toggle extension (This can be customized in Extensions > Keyboard shortcuts)
+ * Esc - Deactivate extension
+ * Arrow keys - Move overlay
+ * Shift+Arrow keys - Move overlay by 10px
+ * Alt+Arrow keys - Resize overlay
+ * Shift+Alt+Arrow keys - Resize overlay by 10px
+ * Ctrl/Cmd+Up/Down - Increase/decrease overlay opacity
+ * Tab - Toggle between primary and alternate overlay color
+ * Delete / Backspace - Clear the current overlay
