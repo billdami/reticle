@@ -98,7 +98,10 @@
 
 .dragging-overlay #reticle-handles:hover .reticle-handle,
 .dragging-mask #reticle-handles:hover .reticle-handle,
-.dragging-handle #reticle-handles:hover .reticle-handle {
+.dragging-handle #reticle-handles:hover .reticle-handle,
+.dragging-overlay #reticle-handles.hover .reticle-handle,
+.dragging-mask #reticle-handles.hover .reticle-handle,
+.dragging-handle #reticle-handles.hover .reticle-handle {
   visibility: hidden;
 }
 

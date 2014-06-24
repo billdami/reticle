@@ -1,8 +1,8 @@
 {
     "name": "Reticle",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "manifest_version": 2,
-    "description": "Drag and resize a ruler overlay to quickly measure the pixel dimensions of anything on a webpage.",
+    "description": "Drag and resize a ruler overlay to quickly measure pixel dimensions, positioning, and alignment of elements on any webpage.",
     "options_page": "settings.html",
     "icons": {
         "16": "images/icon-16.png",

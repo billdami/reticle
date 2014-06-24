@@ -28,3 +28,8 @@ KEYBOARD SHORTCUTS
  * Ctrl/Cmd+Up/Down - Increase/decrease overlay opacity
  * Tab - Toggle between primary and alternate overlay color
  * Delete / Backspace - Clear the current overlay
+
+ CHANGELOG
+----------------------------------------
+v1.0.1 (June 14, 2014)
+ * BUGFIX: Overlay resize handles were not being hidden when dragging a newly drawn overlay
