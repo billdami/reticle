@@ -8,11 +8,13 @@ var ReticleSettings = {
         me.opacityInput = document.getElementById('overlay-opacity');
         me.primHexInput = document.getElementById('primary-hex');
         me.altHexInput = document.getElementById('alt-hex');
+        me.hideSizeInput = document.getElementById('hide-size');
 
         chrome.runtime.sendMessage({action: 'load-settings'}, function(response) {
             me.opacityInput.value = response.settings.overlayOpacity.toFixed(1);
             me.primHexInput.value = response.settings.primaryHex;
             me.altHexInput.value = response.settings.altHex;
+            me.hideSizeInput.checked = response.settings.hideSize;
         });
 
         me.opacityInput.addEventListener('change', function(e) {
@@ -33,6 +35,10 @@ var ReticleSettings = {
 
         me.altHexInput.addEventListener('keyup', function(e) {
             me.save({altHex: me.altHexInput.value});
+        });
+
+        me.hideSizeInput.addEventListener('change', function(e) {
+            me.save({hideSize: me.hideSizeInput.checked});
         });
 
         for(var i=0; i < me.tabList.childNodes.length; i++) {

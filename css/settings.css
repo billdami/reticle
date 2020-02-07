@@ -83,6 +83,10 @@ select {
   background-repeat: no-repeat;
 }
 
+input[type='checkbox'] {
+  -webkit-appearance: checkbox
+}
+
 select:hover:enabled,
 input[type='checkbox']:hover:enabled,
 input[type='radio']:hover:enabled,

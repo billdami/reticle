@@ -27,7 +27,8 @@ var ReticleBg = {
             overlayOpacity: isNaN(parseFloat(localStorage.getItem('overlayOpacity'))) ? 0.4 : parseFloat(localStorage.getItem('overlayOpacity')),
             primaryHex: localStorage.getItem('primaryHex') || '#000000',
             altHex: localStorage.getItem('altHex') || '#C4E2FA',
-            overlayBg: localStorage.getItem('overlayBg') || 'primary'
+            overlayBg: localStorage.getItem('overlayBg') || 'primary',
+            hideSize: (localStorage.getItem('hideSize') === 'true') || false
         };
     },
 

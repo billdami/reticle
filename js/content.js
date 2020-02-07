@@ -130,6 +130,10 @@ window.__Reticle = {
     },
 
     updateInfoText: function() {
+        if (this.hideSize) {
+            this.els.info.style.display = 'none';
+            return;
+        }
         this.els.info.style.display = (this.overlayW > 0 && this.overlayH > 0) ? 'block' : 'none';
         this.els.info.textContent = this.overlayW + ' x ' + this.overlayH;
         this.els.info.style.marginLeft = '-' + (this.els.info.clientWidth / 2) + 'px';
@@ -226,6 +230,7 @@ window.__Reticle = {
         this.primaryRgb = this.hexToRgb(settings.primaryHex);
         this.altRgb = this.hexToRgb(settings.altHex);
         this.overlayBg = settings.overlayBg;
+        this.hideSize = settings.hideSize;
         this.updateOverlayBgCss();
     },
 
